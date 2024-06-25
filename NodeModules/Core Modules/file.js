@@ -2,21 +2,21 @@ const fs = require('fs')
 
 // Write file or create file
 
-fs.writeFile('output.txt','Hello from NodeJS',(err)=>{
+fs.writeFile('output.txt', 'Hello from NodeJS', (err) => {
     if (err) {
         throw err
     } else {
-        console.log("File written successfully");        
+        console.log("File written successfully");
     }
 })
 
 // Reading file
 
-fs.readFile('output.txt','utf8',(err,data)=>{
+fs.readFile('output.txt', 'utf8', (err, data) => {
     if (err) {
         throw err
     } else {
-        console.log(data);        
+        console.log(data);
     }
 })
 
